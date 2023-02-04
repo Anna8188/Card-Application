@@ -2,19 +2,9 @@ const $content = document.querySelector('.main__content');
 const $addButton = document.querySelector('.add');
 const $sortButton = document.querySelector('.sort');
 
+
 renderFirst();
 
-function renderFirst(){
-    let tepmString = localStorage.getItem("myArray");
-    let arrOfNumbers = tepmString.split(",")
-    console.log(arrOfNumbers);
-    if(tepmString === null || tepmString === ""){
-        arrOfNumbers = [];
-    }
-    render(arrOfNumbers);
-}
-
- 
 // The createBox function creates a Box for a number 
 
 function createBox (number, id){
@@ -55,11 +45,22 @@ let sortNumbers = () => {
 
 // rendering 
 
+function renderFirst(){
+    let tepmString = localStorage.getItem("myArray");
+    let arrOfNumbers = tepmString.split(",")
+    console.log(arrOfNumbers);
+    if(tepmString === null || tepmString === ""){
+        arrOfNumbers = [];
+    }
+    render(arrOfNumbers);
+}
+
 function removeAllChildNodes(parent) {
         while (parent.firstChild) {
             parent.removeChild(parent.firstChild);
         }
     }
+
 function render (arr){
     removeAllChildNodes($content);
     localStorage.setItem("myArray", arrOfNumbers);
@@ -67,6 +68,8 @@ function render (arr){
       createBox(el, index)
     })
 }
+
+// addig eventnts to buttons
 $addButton.addEventListener("click", addNumber);
 $sortButton.addEventListener("click", sortNumbers);
 
