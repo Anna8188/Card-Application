@@ -87,7 +87,7 @@ body {
 }
 /* ====================================== Main box =========================================================== */
 .main{
-    height: 800px;;
+    height: 800px;
     overflow-y: auto;
     white-space: nowrap;
     display: flex;
