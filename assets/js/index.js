@@ -4,12 +4,11 @@ const $sortButton = document.querySelector('.sort');
 
 let arrOfNumbers = [];
 
+//first rendering
 renderFirst();
 
 function renderFirst(){
     let tepmString = localStorage.getItem("myArray");
-    console.log(tepmString);
-    console.log(arrOfNumbers);
     if(tepmString === null || tepmString === ""){
         arrOfNumbers = [];
     } else {
@@ -18,9 +17,7 @@ function renderFirst(){
     render(arrOfNumbers);
 }
 
- 
 // The createBox function creates a Box for a number 
-
 function createBox (number, id){
     // create a box for number 
     const item = document.createElement("div");
@@ -48,18 +45,15 @@ let removeNum = (id) =>{
 let addNumber = () => {
        let x = Math.round(Math.random() * 1000);
        arrOfNumbers.push(x);
-       render(arrOfNumbers);
-       
+       render(arrOfNumbers);      
    }
    
 let sortNumbers = () => {
        arrOfNumbers.sort(function(a, b){return a - b});
        render(arrOfNumbers);
-       console.log( arrOfNumbers);
    }
 
 // rendering 
-
 function removeAllChildNodes(parent) {
         while (parent.firstChild) {
             parent.removeChild(parent.firstChild);
@@ -72,6 +66,7 @@ function render (arr){
       createBox(el, index)
     })
 }
+
 // addig eventnts to buttons
 $addButton.addEventListener("click", addNumber);
 $sortButton.addEventListener("click", sortNumbers);
