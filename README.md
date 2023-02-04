@@ -1,4 +1,13 @@
-## Card-Application
+# Card-Application
 
+- The app should have a  basic layout (Header, Instructions, Main, and Footer):
+- The header should have these two buttons - Add Card and Sort Cards.
+Add Card: it should add a new card with a randomly generated and unique number.
+- Sort Cards: it should sort all of the cards by their numbers, from lowest to highest.
+- When the application is starting, the card container must be empty. The user should select Add Card in order to add the cards in the container.
+- All of the cards must have an X icon on the top of the right side. This icon’s function is to delete the card.
+- In the component, where the cards are added, a scrollbar should appear when the quantity of cards is more than the height of the page. However, you don’t need to have the scrollbar at the beginning or when the amount of cards is smaller or equal to the height of the container. It's visible in the image only so users will see cards can be infinite.
+- On the right side of the page, we should have a component. There should be written Instructions.
+- On the bottom, we should have a basic footer.
 
-[<img src="https://keep.google.com/u/1/media/v2/1ALH01kn7aINJ9lkgoBqqSpkmFSZScZ4c410tkTxhLS6AJc9roT50jrEmUP80Kg/1quDaoOCLMoxfl3bhth-vBWy_H_x7cUP9UCUNXNIpv7d41TzUGLFE1M_IchLswE4?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp" width="300" height="150" />](https://keep.google.com/u/1/media/v2/1ALH01kn7aINJ9lkgoBqqSpkmFSZScZ4c410tkTxhLS6AJc9roT50jrEmUP80Kg/1quDaoOCLMoxfl3bhth-vBWy_H_x7cUP9UCUNXNIpv7d41TzUGLFE1M_IchLswE4?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+- ![plot](./assets/img/photo.png)
